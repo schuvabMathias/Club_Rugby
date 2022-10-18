@@ -1,0 +1,250 @@
+ERROR - 2022-10-17 21:41:51 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: U
+CRITICAL - 2022-10-17 21:41:51 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: U
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#5 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-17 21:42:46 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «socios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (null, null, 42631441, 2664729581, Sucre 1449, mathiasarce@gmail.com, 2). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 21:42:46 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «socios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (null, null, 42631441, 2664729581, Sucre 1449, mathiasarce@gmail.com, 2).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-10-17 21:44:10 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre_apellido» de la relación «socios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, null, 42631441, 2664729581, Sucre 1449, mathiasarce@gmail.com, 2). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 21:44:10 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «nombre_apellido» de la relación «socios» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, null, 42631441, 2664729581, Sucre 1449, mathiasarce@gmail.com, 2).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 21:45:29 --> Invalid file: components\header.php
+#0 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(89): view()
+#3 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-17 21:45:47 --> Invalid file: bancoView\mostrarBancoView.php
+#0 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(90): view()
+#3 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-17 21:46:03 --> Undefined index: nombre
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(90): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-17 21:46:17 --> Undefined index: categoria
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(90): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-17 23:17:53 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «enfermedad_coronaria» de la relación «veteranos» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, null, null). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(74): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 23:17:53 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «enfermedad_coronaria» de la relación «veteranos» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, null, null).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(74): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-10-17 23:19:57 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «juveniles» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, 21312, 32132132, null). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(65): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 23:19:57 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «juveniles» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (1, 21312, 32132132, null).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(65): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-10-17 23:20:51 --> ErrorException: pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «juveniles» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (2, 21312, 32132132, null). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(65): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 23:20:51 --> pg_query(): Query failed: ERROR:  el valor nulo en la columna «id_socio» de la relación «juveniles» viola la restricción de no nulo
+DETAIL:  La fila que falla contiene (2, 21312, 32132132, null).
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(65): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-10-17 23:23:55 --> ErrorException: pg_query(): Query failed: ERROR:  nextval: se alcanzó el valor máximo de la secuencia «socios_id_socio_seq» (4) in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-17 23:23:55 --> pg_query(): Query failed: ERROR:  nextval: se alcanzó el valor máximo de la secuencia «socios_id_socio_seq» (4)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(59): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
