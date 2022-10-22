@@ -1,0 +1,39 @@
+ERROR - 2022-10-22 16:33:25 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+CRITICAL - 2022-10-22 16:33:25 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(93): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-22 17:05:33 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+CRITICAL - 2022-10-22 17:05:33 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(93): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-22 17:07:16 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+CRITICAL - 2022-10-22 17:07:16 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(93): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

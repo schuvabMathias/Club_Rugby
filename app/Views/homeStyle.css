@@ -1,0 +1,12 @@
+img {
+    margin-top: 2px;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+img:hover {
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.7s;
+    transform: scale(1.2);
+}

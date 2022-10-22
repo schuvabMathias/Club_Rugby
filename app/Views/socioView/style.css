@@ -1,0 +1,14 @@
+.titulo {
+    width: 68%;
+    border-radius: 15px;
+}
+
+body .container .formulario {
+    margin-top: 25px;
+}
+
+.form-floating:not(label) {
+    filter: alpha(opacity=50);
+    opacity: 0.6;
+    color: black;
+}
