@@ -1,60 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Club de Rugby</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Club Rugby</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/styleGeneral.css">
+    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/socioView/style.css">
+
 </head>
 
 <body>
-    <h1>Ingresar socio:</h1>
-    <?php if ($validation != null) { ?>
-        <?= $validation->listErrors(); ?>
-    <?php } ?>
-    <?= form_open('socioController/create') ?>
-    <div class="mb-3">
-        <label for="inputNombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>">
+    <div class="container-fluid p-1 bg-dark text-white text-center mt-5 titulo">
+        <h1><b>|~</b> Clubcito de Rugby <b>~|</b></h1>
+        <p></p>
     </div>
-    <div class="mb-3">
-        <label for="inputDocumento" class="form-label">Documento</label>
-        <input type="number" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>">
+
+    <div class="container mt-4">
+        <h2 class="text-center mt-5 text-dark">Inscripcion menu
+        </h2>
+        <?php if ($validation != null) { ?>
+            <?= $validation->listErrors(); ?>
+        <?php } ?>
+        <?= form_open('socioController/create') ?>
+        <div class="row mt-4 formulario">
+            <div class="col-sm-6">
+                <!-- nombre -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>" placeholder="Carlitos Bala">
+                    <label for="inputName">Nombre y Apellido</label>
+                </div>
+                <!-- email -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>" placeholder="name@example.com">
+                    <label for="inputMail">Direccion de email</label>
+                </div>
+                <!-- TELEFONO -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>" placeholder="Telefono">
+                    <label for="inputTelefono">Telefono</label>
+                </div> <!-- aca vamos a tener que hacer un control de que se ingresen solo numeros -->
+            </div>
+            <div class="col-sm-6 text-end">
+                <!-- DIRECCION -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="inputDireccion" name="inputDireccion" value="<?php echo $direccion ?>" placeholder="Telefono">
+                    <label for="inputDireccion">Direccion</label>
+                </div>
+                <!-- DOCUMENTO -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>" placeholder="Password">
+                    <label for="inputDocumento">Documento</label>
+                </div>
+                <!-- CATEGORIA -->
+                <div class="form-floating ">
+                    <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
+                        <option selected>Seleccione su categoria</option>
+                        <option value="1">Infantil (6 a 12)</option>
+                        <option value="2">Juvenil</option>
+                        <option value="3">Mayor</option>
+                    </select>
+                    <label for="floatingSelect">Works with selects</label>
+                </div>
+
+            </div>
+
+            <div class="d-grid mt-4">
+                <button type="button" class="btn btn-dark">Inscribir!</button>
+            </div>
+
+
+
+        </div> <?= form_close() ?>
     </div>
-    <div class="mb-3">
-        <label for="inputTelefono" class="form-label">Telefono:</label>
-        <input type="text" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>">
+
+
+    <!--Waves Container-->
+    <div class="fixed-bottom">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
     </div>
-    <div class="mb-3">
-        <label for="inputDireccion" class="form-label">Direcci&oacute;n:</label>
-        <input type="text" class="form-control" id="inputDireccion" name="inputDireccion" value="<?php echo $direccion ?>">
-    </div>
-    <div class="mb-3">
-        <label for="inputMail" class="form-label">Mail:</label>
-        <input type="mail" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>">
-    </div>
-    <label class="form-label">Buscar:</label>
-    <div class="mb-3">
-        <select class="form-select" aria-label="Select Categoria" name="selectCategoria" id="selectCategoria">
-            <option value="1">Infantil</option>
-            <option value="2">Juvenil</option>
-            <option value="3" default>Mayor</option>
-            <option value="4">Veterano</option>
-        </select>
-    </div>
-    <div class="mb-3 infantil">
-        <label for="inputNombreTutor" class="form-label">Nombre Tutor:</label>
-        <input type="mail" class="form-control" id="inputNombreTutor" name="inputNombreTutor" value="<?php echo $nombre_tutor ?>">
-    </div>
-    <div class="mb-3 infantil">
-        <label for="inputDocumentoTutor" class="form-label">Documento Tutor:</label>
-        <input type="mail" class="form-control" id="inputDocumentoTutor" name="inputDocumentoTutor" value="<?php echo $dni_tutor ?>">
-    </div>
-    <div class="mb-3 veterano"><input type="checkbox" id="inputEnfermedad" name="inputEnfermedad" value="enfermedad coronaria"></div>
-    <button type="submit" class="btn btn-primary">Ingresar</button>
-    <?= form_close() ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--Waves end-->
+
+
+
 </body>
 
 </html>
