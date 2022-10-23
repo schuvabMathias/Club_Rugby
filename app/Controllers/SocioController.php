@@ -47,12 +47,17 @@ class SocioController extends BaseController
             'nombre_tutor' => $request->getPost('inputNombreTutor'),
             'dni_tutor' => $request->getPost('inputDocumentoTutor'),
         );
+        $enfermedad = $request->getPost('inputEnfermedad');
+        if ($enfermedad == null) {
+            $enfermedad = false;
+        } else {
+            $enfermedad = true;
+        }
         $dataVeterano = array(
-            'enfermedad_coronaria' => $request->getPost('inputEnfermedad'),
+            'enfermedad_coronaria' => $enfermedad,
         );
-        //$rules = $bancoModel->getValidationRules();
+        //$rules = $socioModel->getValidationRules();
         //if (!$this->validate($rules)) {
-        //    $data['pantalla'] = 'create';
         //    $data['validation'] = $this->validator;
         //    return view('components\header') . view('components\navbar') . view('bancoView\createBancoView', $data);
         //}
@@ -66,6 +71,7 @@ class SocioController extends BaseController
         $dataVeterano['id_socio'] = $socio[0]['id_socio'];
         if ($request->getPost('selectCategoria') == 1) {
             if (!$juvenilModel->insert($dataJuvenil)) {
+                $socioModel->delete();
                 var_dump($juvenilModel->errors());
                 $dataSocio['nombre_tutor'] = $dataJuvenil['nombre_tutor'];
                 $dataSocio['dni_tutor'] = $dataJuvenil['dni_tutor'];

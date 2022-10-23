@@ -28,21 +28,32 @@
         <?= form_open('socioController/create') ?>
         <div class="row mt-4 formulario">
             <div class="col-sm-6">
-                <!-- nombre -->
+                <!-- NOMBRE -->
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>" placeholder="Carlitos Bala">
                     <label for="inputName">Nombre y Apellido</label>
                 </div>
-                <!-- email -->
+                <!-- EMAIL -->
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>" placeholder="name@example.com">
                     <label for="inputMail">Direccion de email</label>
                 </div>
                 <!-- TELEFONO -->
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>" placeholder="Telefono">
+                    <input type="number" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>" placeholder="Telefono">
                     <label for="inputTelefono">Telefono</label>
                 </div> <!-- aca vamos a tener que hacer un control de que se ingresen solo numeros -->
+                <div class="form-floating mb-3 infantil-Nomb">
+                    <input type="mail" class="form-control infantil" id="inputNombreTutor" name="inputNombreTutor" value="<?php echo $nombre_tutor ?>" placeholder="Mustafa Bala">
+                    <label for="inputNombreTutor" class="form-label infantil">Nombre Tutor:</label>
+                </div>
+                <div class="mb-3 veterano">
+                    <input type="checkbox" class="veterano form-check-input" id="inputEnfermedad" name="inputEnfermedad" value="enfermedad coronaria" placeholder="Algo">
+                    <label for="inputEnfermedad" class="form-check-label">
+                        <p>Enfermedad coronaria</p>
+                    </label>
+                </div>
+
             </div>
             <div class="col-sm-6 text-end">
                 <!-- DIRECCION -->
@@ -52,29 +63,45 @@
                 </div>
                 <!-- DOCUMENTO -->
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>" placeholder="Password">
+                    <input type="number" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>" placeholder="Password">
                     <label for="inputDocumento">Documento</label>
                 </div>
                 <!-- CATEGORIA -->
-                <div class="form-floating ">
+                <div class="form-floating mb-3">
                     <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
                         <option selected>Seleccione su categoria</option>
                         <option value="1">Infantil (6 a 12)</option>
                         <option value="2">Juvenil</option>
-                        <option value="3">Mayor</option>
+                        <option value="3" selected>Mayor</option>
+                        <option value="4">Veterano</option>
                     </select>
-                    <label for="floatingSelect">Works with selects</label>
+                    <label for="floatingSelect">Categoria</label>
+                </div>
+                <div class="form-floating mb-3 infantil-Doc">
+                    <input type="mail" class="form-control infantil" id="inputDocumentoTutor" name="inputDocumentoTutor" value="<?php echo $dni_tutor ?>" placeholder="Algo">
+                    <label for="inputDocumentoTutor" class="form-label infantil">Documento Tutor:</label>
+                </div>
+                <div class="mb-3 veteranoInv">
+                    <p style="margin-top: 4.5rem"></p>
                 </div>
 
+
             </div>
 
-            <div class="d-grid mt-4">
-                <button type="button" class="btn btn-dark">Inscribir!</button>
+        </div>
+        <div class="row formulario">
+            <div class="col-sm-6">
+                <div class="d-grid">
+                    <a type="button" class="btn btn-lg btn-outline-warning" href="http://localhost/Club_Rugby/index.php">Volver</a>
+                </div>
             </div>
-
-
-
-        </div> <?= form_close() ?>
+            <div class="col-sm-6">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-lg btn-dark">Inscribir!</button>
+                </div>
+            </div>
+        </div>
+        <?= form_close() ?>
     </div>
 
 
@@ -95,6 +122,7 @@
     <!--Waves end-->
 
 
+    <script src="http://localhost/Club_Rugby/app/Views/socioView/createSocioView.js"></script>
 
 </body>
 
