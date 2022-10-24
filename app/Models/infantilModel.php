@@ -20,12 +20,12 @@ class infantilModel extends Model
     protected $updatedField     = 'updated_at';
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
-        'nombre_tutor' => 'required',
+        'nombre_tutor' => 'required|alpha_space',
         'dni_tutor' => 'required',
         'id_socio' => 'required',
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
-        'nombre_tutor' => ['required' => 'El campo nombre tutor es requerido'],
+        'nombre_tutor' => ['required' => 'El campo nombre tutor es requerido', 'alpha_space' => "Solo debe contener letras"],
         'dni_tutor' => ['required' => 'El campo documento tutor es requerido'],
         'id_socio' => ['required' => 'El campo id_socio es requerido']
     ]; /*[
