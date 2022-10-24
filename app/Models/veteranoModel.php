@@ -19,11 +19,13 @@ class veteranoModel extends Model
     protected $updatedField     = 'updated_at';
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
+        //'enfermedad_coronaria' => 'required'
         // 'nombre' => 'required',
         // 'direccion' => 'required',
         // 'numero_sucursal' => 'required'
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
+        //'enfermedad_coronaria' => ['required' => "Es necesario marcar esta opcion"]
         // 'nombre' => ['required' => 'El campo nombre es requerido'],
         // 'direccion' => ['required' => 'El campo direccion es requerido'],
         // 'numero_sucursal' => ['required' => 'El campo numero de sucursal es requerido']

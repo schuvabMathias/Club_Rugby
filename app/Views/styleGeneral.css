@@ -1,5 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 body {
     background: #636363;
     /* fallback for old browsers */
@@ -7,7 +16,13 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #a2ab58, #636363);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+/* para pc */
+@media (min-width: 720px) and (max-width: 2080px) {
+    .general {
+        width: 80%;
+    }
 }
 
 .titulo {
@@ -64,7 +79,7 @@ p {
     height: 15vh;
     margin-bottom: -7px;
     /*Fix for safari gap*/
-    min-height: 100px;
+    min-height: 30px;
     max-height: 150px;
 }
 
