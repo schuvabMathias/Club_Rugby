@@ -5,7 +5,7 @@ namespace App\Controllers;
 use Config\Services;
 use CodeIgniter\Controller;
 use App\Models\socioModel;
-use App\Models\juvenilModel;
+use App\Models\infantilModel;
 use App\Models\veteranoModel;
 
 class SocioController extends BaseController
@@ -20,7 +20,7 @@ class SocioController extends BaseController
     {
         $request = Services::request();
         $socioModel = new socioModel($db);
-        $juvenilModel = new juvenilModel($db);
+        $infantilModel = new infantilModel($db);
         $veteranoModel = new veteranoModel($db);
         $data = array(
             'nombre_apellido' => "",
@@ -43,7 +43,7 @@ class SocioController extends BaseController
             'mail' => $request->getPost('inputMail'),
             'id_categoria' => $request->getPost('selectCategoria'),
         );
-        $dataJuvenil = array(
+        $datainfantil = array(
             'nombre_tutor' => $request->getPost('inputNombreTutor'),
             'dni_tutor' => $request->getPost('inputDocumentoTutor'),
         );
@@ -56,25 +56,36 @@ class SocioController extends BaseController
         $dataVeterano = array(
             'enfermedad_coronaria' => $enfermedad,
         );
-        //$rules = $socioModel->getValidationRules();
-        //if (!$this->validate($rules)) {
-        //    $data['validation'] = $this->validator;
-        //    return view('components\header') . view('components\navbar') . view('bancoView\createBancoView', $data);
-        //}
+        $rules = [
+            'nombre_apellido' => 'required',
+            'dni' => 'required',
+            'telefono' => 'required',
+            'direccion' => 'required',
+            'mail' => 'required|valid_email|is_unique[socios.mail]',
+            'id_categoria' => 'required'
+        ];
+        if (!$this->validate($rules)) {
+            $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
+            $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
+            $dataSocio['validation'] = $this->validator;
+            return view('socioView\createSocioView', $dataSocio);
+        }
         if (!$socioModel->insert($dataSocio)) {
             var_dump($socioModel->errors());
+            $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
+            $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
             $dataSocio['validation'] = $this->validator;
             return view('socioView\createSocioView', $dataSocio);
         }
         $socio = $socioModel->where('dni', $request->getPost('inputDocumento'))->findAll();
-        $dataJuvenil['id_socio'] = $socio[0]['id_socio'];
+        $datainfantil['id_socio'] = $socio[0]['id_socio'];
         $dataVeterano['id_socio'] = $socio[0]['id_socio'];
         if ($request->getPost('selectCategoria') == 1) {
-            if (!$juvenilModel->insert($dataJuvenil)) {
+            if (!$infantilModel->insert($datainfantil)) {
                 $socioModel->delete();
-                var_dump($juvenilModel->errors());
-                $dataSocio['nombre_tutor'] = $dataJuvenil['nombre_tutor'];
-                $dataSocio['dni_tutor'] = $dataJuvenil['dni_tutor'];
+                var_dump($infantilModel->errors());
+                $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
+                $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
                 $dataSocio['validation'] = $this->validator;
                 return view('socioView\createSocioView', $dataSocio);
             }

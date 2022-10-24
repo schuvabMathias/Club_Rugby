@@ -22,9 +22,7 @@
     <div class="container mt-4">
         <h2 class="text-center mt-5 text-dark">Inscripcion menu
         </h2>
-        <?php if ($validation != null) { ?>
-            <?= $validation->listErrors(); ?>
-        <?php } ?>
+
         <?= form_open('socioController/create') ?>
         <div class="row mt-4 formulario">
             <div class="col-sm-6">
@@ -32,11 +30,19 @@
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>" placeholder="Carlitos Bala">
                     <label for="inputName">Nombre y Apellido</label>
+                    <?php
+                    if ($validation != NULL && $validation->hasError('nombre_apellido')) {
+                        echo $validation->getError('nombre_apellido');
+                    } ?>
                 </div>
                 <!-- EMAIL -->
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>" placeholder="name@example.com">
                     <label for="inputMail">Direccion de email</label>
+                    <?php
+                    if ($validation != NULL && $validation->hasError('mail')) {
+                        echo $validation->getError('mail');
+                    } ?>
                 </div>
                 <!-- TELEFONO -->
                 <div class="form-floating mb-3">
@@ -70,10 +76,10 @@
                 <div class="form-floating mb-3">
                     <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
                         <option selected>Seleccione su categoria</option>
-                        <option value="1">Infantil (6 a 12)</option>
-                        <option value="2">Juvenil</option>
-                        <option value="3" selected>Mayor</option>
-                        <option value="4">Veterano</option>
+                        <option value="1">Infantil (6 a 12 años)</option>
+                        <option value="2">Juvenil (13 a 18 años)</option>
+                        <option value="3" selected>Mayor (19 a 30 años)</option>
+                        <option value="4">Veterano (Mayores a 30 años)</option>
                     </select>
                     <label for="floatingSelect">Categoria</label>
                 </div>
