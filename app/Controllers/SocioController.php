@@ -5,7 +5,7 @@ namespace App\Controllers;
 use Config\Services;
 use CodeIgniter\Controller;
 use App\Models\socioModel;
-use App\Models\juvenilModel;
+use App\Models\infantilModel;
 use App\Models\veteranoModel;
 
 class SocioController extends BaseController
@@ -20,8 +20,18 @@ class SocioController extends BaseController
     {
         $request = Services::request();
         $socioModel = new socioModel($db);
-        $juvenilModel = new juvenilModel($db);
+        $infantilModel = new infantilModel($db);
         $veteranoModel = new veteranoModel($db);
+        $validation = array(
+            'nombre_apellido' => "",
+            'dni' => "",
+            'telefono' => "",
+            'direccion' => "",
+            'mail' => "",
+            'nombre_tutor' => "",
+            'dni_tutor' => "",
+            'id_categoria' => 2,
+        );
         $data = array(
             'nombre_apellido' => "",
             'dni' => "",
@@ -30,9 +40,10 @@ class SocioController extends BaseController
             'mail' => "",
             'nombre_tutor' => "",
             'dni_tutor' => "",
+            'id_categoria' => 2,
         );
         if (strtolower($this->request->getMethod()) !== 'post') {
-            $data['validation'] = $this->validator;
+            $data['validation'] = $validation;
             return view('socioView\createSocioView', $data);
         }
         $dataSocio = array(
@@ -43,7 +54,7 @@ class SocioController extends BaseController
             'mail' => $request->getPost('inputMail'),
             'id_categoria' => $request->getPost('selectCategoria'),
         );
-        $dataJuvenil = array(
+        $datainfantil = array(
             'nombre_tutor' => $request->getPost('inputNombreTutor'),
             'dni_tutor' => $request->getPost('inputDocumentoTutor'),
         );
@@ -56,35 +67,39 @@ class SocioController extends BaseController
         $dataVeterano = array(
             'enfermedad_coronaria' => $enfermedad,
         );
-        //$rules = $socioModel->getValidationRules();
-        //if (!$this->validate($rules)) {
-        //    $data['validation'] = $this->validator;
-        //    return view('components\header') . view('components\navbar') . view('bancoView\createBancoView', $data);
-        //}
         if (!$socioModel->insert($dataSocio)) {
-            var_dump($socioModel->errors());
-            $dataSocio['validation'] = $this->validator;
+            foreach ($socioModel->errors() as $clave => $valor) {
+                $validation[$clave] = $valor;
+            }
+            $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
+            $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
+            $dataSocio['validation'] = $validation;
             return view('socioView\createSocioView', $dataSocio);
         }
         $socio = $socioModel->where('dni', $request->getPost('inputDocumento'))->findAll();
-        $dataJuvenil['id_socio'] = $socio[0]['id_socio'];
+        $datainfantil['id_socio'] = $socio[0]['id_socio'];
         $dataVeterano['id_socio'] = $socio[0]['id_socio'];
         if ($request->getPost('selectCategoria') == 1) {
-            if (!$juvenilModel->insert($dataJuvenil)) {
-                $socioModel->delete();
-                var_dump($juvenilModel->errors());
-                $dataSocio['nombre_tutor'] = $dataJuvenil['nombre_tutor'];
-                $dataSocio['dni_tutor'] = $dataJuvenil['dni_tutor'];
-                $dataSocio['validation'] = $this->validator;
+            if (!$infantilModel->insert($datainfantil)) {
+                $socioModel->where('id_socio', $socio[0]['id_socio'])->delete();
+                foreach ($infantilModel->errors() as $clave => $valor) {
+                    $validation[$clave] = $valor;
+                }
+                $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
+                $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
+                $dataSocio['validation'] = $validation;
                 return view('socioView\createSocioView', $dataSocio);
             }
         }
         if ($request->getPost('selectCategoria') == 4) {
             if (!$veteranoModel->insert($dataVeterano)) {
-                var_dump($veteranoModel->errors());
+                $socioModel->where('id_socio', $socio[0]['id_socio'])->delete();
+                foreach ($veteranoModel->errors() as $clave => $valor) {
+                    $validation[$clave] = $valor;
+                }
                 $dataSocio['nombre_tutor'] = "";
                 $dataSocio['dni_tutor'] = "";
-                $dataSocio['validation'] = $this->validator;
+                $dataSocio['validation'] = $validation;
                 return view('socioView\createSocioView', $dataSocio);
             }
         }

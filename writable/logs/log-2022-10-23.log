@@ -64,3 +64,221 @@ DETAIL:  Ya existe la llave (dni)=().
 #11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 {main}
+CRITICAL - 2022-10-23 19:17:34 --> Undefined variable: validation
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(71): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:17:55 --> Call to undefined method CodeIgniter\Validation\Validation::getErros()
+#0 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#3 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(71): view()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-10-23 19:26:17 --> ErrorException: pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_dni_key»
+DETAIL:  Ya existe la llave (dni)=(). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 19:26:17 --> pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_dni_key»
+DETAIL:  Ya existe la llave (dni)=().
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 19:26:24 --> Trying to access array offset on value of type null
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(36): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:26:26 --> Trying to access array offset on value of type null
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(36): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-23 19:27:08 --> ErrorException: pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_dni_key»
+DETAIL:  Ya existe la llave (dni)=(). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 19:27:08 --> pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_dni_key»
+DETAIL:  Ya existe la llave (dni)=().
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-10-23 19:28:02 --> ErrorException: pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_mail_key»
+DETAIL:  Ya existe la llave (mail)=(). in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 19:28:02 --> pg_query(): Query failed: ERROR:  llave duplicada viola restricción de unicidad «socios_mail_key»
+DETAIL:  Ya existe la llave (mail)=().
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-23 19:36:31 --> Undefined index: nombre_apellido
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(80): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:37:04 --> Undefined index: nombre_apellido
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(80): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:37:28 --> Undefined index: nombre_apellido
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(80): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:43:41 --> Undefined index: id_categoria
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(75): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:53:18 --> Trying to access array offset on value of type null
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(47): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:53:26 --> Trying to access array offset on value of type null
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(47): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-23 19:59:20 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#2 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(963): CodeIgniter\Model->doDelete()
+#3 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(84): CodeIgniter\BaseModel->delete()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
