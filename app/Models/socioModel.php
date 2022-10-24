@@ -24,11 +24,7 @@ class socioModel extends Model
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
         'nombre_apellido' => 'required',
-<<<<<<< HEAD
         'dni' => 'required|min_length[7]|max_length[8]',
-=======
-        'dni' => 'required',
->>>>>>> f704c75af0f73809a1c24067988cd41f052f43dc
         'telefono' => 'required',
         'direccion' => 'required',
         'mail' => 'required|valid_email|is_unique[socios.mail]',
@@ -36,22 +32,11 @@ class socioModel extends Model
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
         'nombre_apellido' => ['required' => "El campo nombre es requerido"],
-<<<<<<< HEAD
         'dni' => ['required' => "El campo documento es requerido"],
         'telefono' => ['required' => "El campo telefono es requerido"],
         'direccion' => ['required' => "El campo direccion es requerido"],
         'mail' => ['required' => "El campo mail es requerido"],
         'id_categoria' => ['required' => "El campo categoria es requerido"]
     ];
-=======
-        'dni' => ['required' => "El campo nombre es requerido"],
-        'telefono' => ['required' => "El campo nombre es requerido"],
-        'direccion' => ['required' => "El campo nombre es requerido"],
-        'mail' => ['required' => "El campo nombre es requerido"],
-        'id_categoria' => ['required' => "El campo nombre es requerido"]
-    ]; /*[
-        'email' => ['is_unique' => 'Este e-mail ya pertenece a otro usuario']
-    ];*/
->>>>>>> f704c75af0f73809a1c24067988cd41f052f43dc
     protected $skipValidation = false;  // es para indicar que use la validación
 }

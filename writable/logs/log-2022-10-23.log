@@ -141,3 +141,23 @@ CRITICAL - 2022-10-23 19:26:26 --> Trying to access array offset on value of typ
 #7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-10-23 20:19:00 --> syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\Apache24\htdocs\Club_Rugby\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(22): spl_autoload_call()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-10-23 20:19:40 --> Call to a member function hasError() on array
+#0 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#3 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(78): view()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
