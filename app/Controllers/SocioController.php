@@ -74,6 +74,7 @@ class SocioController extends BaseController
             $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
             $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
             $dataSocio['validation'] = $validation;
+
             return view('socioView\createSocioView', $dataSocio);
         }
         $socio = $socioModel->where('dni', $request->getPost('inputDocumento'))->findAll();
@@ -81,6 +82,7 @@ class SocioController extends BaseController
         $dataVeterano['id_socio'] = $socio[0]['id_socio'];
         if ($request->getPost('selectCategoria') == 1) {
             if (!$infantilModel->insert($datainfantil)) {
+
                 $socioModel->where('id_socio', $socio[0]['id_socio'])->delete();
                 foreach ($infantilModel->errors() as $clave => $valor) {
                     $validation[$clave] = $valor;
@@ -88,6 +90,7 @@ class SocioController extends BaseController
                 $dataSocio['nombre_tutor'] = $datainfantil['nombre_tutor'];
                 $dataSocio['dni_tutor'] = $datainfantil['dni_tutor'];
                 $dataSocio['validation'] = $validation;
+
                 return view('socioView\createSocioView', $dataSocio);
             }
         }

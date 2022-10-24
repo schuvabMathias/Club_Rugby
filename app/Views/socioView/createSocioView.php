@@ -22,98 +22,105 @@
     <div class="container mt-4">
         <h2 class="text-center mt-5 text-dark">Inscripcion menu
         </h2>
-        <?= form_open('socioController/create') ?>
-        <div class="row mt-4 formulario">
-            <div class="col-sm-6">
-                <!-- NOMBRE -->
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>" placeholder="Carlitos Bala">
-                    <label for="inputName">Nombre y Apellido</label>
-                    <?php echo $validation['nombre_apellido']; ?>
-                </div>
-                <!-- EMAIL -->
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>" placeholder="name@example.com">
-                    <label for="inputMail">Direccion de email</label>
-                    <?php echo $validation['mail']; ?>
-                </div>
+        <<<<<<< HEAD=======>>>>>>> f704c75af0f73809a1c24067988cd41f052f43dc
+            <?= form_open('socioController/create') ?>
+            <div class="row mt-4 formulario">
+                <div class="col-sm-6">
+                    <!-- NOMBRE -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="inputNombre" name="inputNombre" value="<?php echo $nombre_apellido ?>" placeholder="Carlitos Bala">
+                        <label for="inputName">Nombre y Apellido</label>
+                        <<<<<<< HEAD <?php echo $validation['nombre_apellido']; ?>=======<?php
+                                                                                            if ($validation != NULL && $validation->hasError('nombre_apellido')) {
+                                                                                                echo $validation->getError('nombre_apellido');
+                                                                                            } ?>>>>>>>> f704c75af0f73809a1c24067988cd41f052f43dc
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputMail" name="inputMail" value="<?php echo $mail ?>" placeholder="name@example.com">
+                        <label for="inputMail">Direccion de email</label>
+                        <<<<<<< HEAD <?php echo $validation['mail']; ?>=======<?php
+                                                                                if ($validation != NULL && $validation->hasError('mail')) {
+                                                                                    echo $validation->getError('mail');
+                                                                                } ?>>>>>>>> f704c75af0f73809a1c24067988cd41f052f43dc
+                    </div>
 
-                <!-- TELEFONO -->
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>" placeholder="Telefono">
-                    <label for="inputTelefono">Telefono</label>
-                    <?php echo $validation['telefono']; ?>
-                </div> <!-- aca vamos a tener que hacer un control de que se ingresen solo numeros -->
-                <div class="form-floating mb-3 infantil-Nomb">
-                    <input type="mail" class="form-control infantil" id="inputNombreTutor" name="inputNombreTutor" value="<?php echo $nombre_tutor ?>" placeholder="Mustafa Bala">
-                    <label for="inputNombreTutor" class="form-label infantil">Nombre Tutor</label>
-                    <?php echo $validation['nombre_tutor']; ?>
+                    <!-- TELEFONO -->
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="inputTelefono" name="inputTelefono" value="<?php echo $telefono ?>" placeholder="Telefono">
+                        <label for="inputTelefono">Telefono</label>
+                        <?php echo $validation['telefono']; ?>
+                    </div> <!-- aca vamos a tener que hacer un control de que se ingresen solo numeros -->
+                    <div class="form-floating mb-3 infantil-Nomb">
+                        <input type="mail" class="form-control infantil" id="inputNombreTutor" name="inputNombreTutor" value="<?php echo $nombre_tutor ?>" placeholder="Mustafa Bala">
+                        <label for="inputNombreTutor" class="form-label infantil">Nombre Tutor</label>
+                        <?php echo $validation['nombre_tutor']; ?>
+                    </div>
+                    <div class="mb-3 veterano">
+                        <input type="checkbox" class="veterano form-check-input" id="inputEnfermedad" name="inputEnfermedad" value="enfermedad coronaria" placeholder="Algo">
+                        <label for="inputEnfermedad" class="form-check-label">
+                            <p>Enfermedad coronaria</p>
+                        </label>
+                    </div>
+
                 </div>
-                <div class="mb-3 veterano">
-                    <input type="checkbox" class="veterano form-check-input" id="inputEnfermedad" name="inputEnfermedad" value="enfermedad coronaria" placeholder="Algo">
-                    <label for="inputEnfermedad" class="form-check-label">
-                        <p>Enfermedad coronaria</p>
-                    </label>
+                <div class="col-sm-6 text-end">
+                    <!-- DIRECCION -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="inputDireccion" name="inputDireccion" value="<?php echo $direccion ?>" placeholder="Telefono">
+                        <label for="inputDireccion">Direccion</label>
+                        <?php echo $validation['direccion']; ?>
+                    </div>
+                    <!-- DOCUMENTO -->
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>" placeholder="Password">
+                        <label for="inputDocumento">Documento</label>
+                        <?php echo $validation['dni']; ?>
+                    </div>
+                    <!-- CATEGORIA -->
+                    <div class="form-floating mb-3">
+                        <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
+                            <option value="1" <?php if ($id_categoria == 1) {
+                                                    echo 'selected';
+                                                } ?>>Infantil (6 a 12 años)</option>
+                            <option value="2" <?php if ($id_categoria == 2) {
+                                                    echo 'selected';
+                                                } ?>>Juvenil (13 a 18 años)</option>
+                            <option value="3" <?php if ($id_categoria == 3) {
+                                                    echo 'selected';
+                                                } ?>>Mayor (19 a 30 años)</option>
+                            <option value="4" <?php if ($id_categoria == 4) {
+                                                    echo 'selected';
+                                                } ?>>Veterano (Mayores a 30 años)</option>
+                        </select>
+                        <label for="floatingSelect">Categoria</label>
+                    </div>
+                    <div class="form-floating mb-3 infantil-Doc">
+                        <input type="mail" class="form-control infantil" id="inputDocumentoTutor" name="inputDocumentoTutor" value="<?php echo $dni_tutor ?>" placeholder="Algo">
+                        <label for="inputDocumentoTutor" class="form-label infantil">Documento Tutor</label>
+                        <?php echo $validation['dni_tutor']; ?>
+                    </div>
+                    <div class="mb-3 veteranoInv">
+                        <p style="margin-top: 4.5rem"></p>
+                    </div>
+
+
                 </div>
 
             </div>
-            <div class="col-sm-6 text-end">
-                <!-- DIRECCION -->
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputDireccion" name="inputDireccion" value="<?php echo $direccion ?>" placeholder="Telefono">
-                    <label for="inputDireccion">Direccion</label>
-                    <?php echo $validation['direccion']; ?>
+            <div class="row formulario">
+                <div class="col-sm-6">
+                    <div class="d-grid">
+                        <a type="button" class="btn btn-lg btn-outline-warning" href="http://localhost/Club_Rugby/index.php">Volver</a>
+                    </div>
                 </div>
-                <!-- DOCUMENTO -->
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="inputDocumento" name="inputDocumento" value="<?php echo $dni ?>" placeholder="Password">
-                    <label for="inputDocumento">Documento</label>
-                    <?php echo $validation['dni']; ?>
-                </div>
-                <!-- CATEGORIA -->
-                <div class="form-floating mb-3">
-                    <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
-                        <option value="1" <?php if ($id_categoria == 1) {
-                                                echo 'selected';
-                                            } ?>>Infantil (6 a 12)</option>
-                        <option value="2" <?php if ($id_categoria == 2) {
-                                                echo 'selected';
-                                            } ?>>Juvenil</option>
-                        <option value="3" <?php if ($id_categoria == 3) {
-                                                echo 'selected';
-                                            } ?>>Mayor</option>
-                        <option value="4" <?php if ($id_categoria == 4) {
-                                                echo 'selected';
-                                            } ?>>Veterano</option>
-                    </select>
-                    <label for="floatingSelect">Categoria</label>
-                </div>
-                <div class="form-floating mb-3 infantil-Doc">
-                    <input type="mail" class="form-control infantil" id="inputDocumentoTutor" name="inputDocumentoTutor" value="<?php echo $dni_tutor ?>" placeholder="Algo">
-                    <label for="inputDocumentoTutor" class="form-label infantil">Documento Tutor</label>
-                    <?php echo $validation['dni_tutor']; ?>
-                </div>
-                <div class="mb-3 veteranoInv">
-                    <p style="margin-top: 4.5rem"></p>
-                </div>
-
-
-            </div>
-
-        </div>
-        <div class="row formulario">
-            <div class="col-sm-6">
-                <div class="d-grid">
-                    <a type="button" class="btn btn-lg btn-outline-warning" href="http://localhost/Club_Rugby/index.php">Volver</a>
+                <div class="col-sm-6">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-lg btn-dark">Inscribir!</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-lg btn-dark">Inscribir!</button>
-                </div>
-            </div>
-        </div>
-        <?= form_close() ?>
+            <?= form_close() ?>
     </div>
 
 

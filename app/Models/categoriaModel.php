@@ -18,14 +18,14 @@ class categoriaModel extends Model
     protected $updatedField     = 'updated_at';
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
-        // 'nombre' => 'required',
-        // 'direccion' => 'required',
-        // 'numero_sucursal' => 'required'
-    ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
+        'nombre' => 'required',
+        'direccion' => 'required',
+        'numero_sucursal' => 'required'
+    ]; // ['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
-        // 'nombre' => ['required' => 'El campo nombre es requerido'],
-        // 'direccion' => ['required' => 'El campo direccion es requerido'],
-        // 'numero_sucursal' => ['required' => 'El campo numero de sucursal es requerido']
+        'nombre' => ['required' => 'El campo nombre es requerido'],
+        'direccion' => ['required' => 'El campo direccion es requerido'],
+        'numero_sucursal' => ['required' => 'El campo numero de sucursal es requerido']
     ]; /*[
         'email' => ['is_unique' => 'Este e-mail ya pertenece a otro usuario']
     ];*/

@@ -1,4 +1,4 @@
-DROP TABLE juveniles;
+DROP TABLE infantiles;
 DROP TABLE veteranos;
 DROP TABLE socios;
 DROP TABLE categorias;

@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="app\Views\styleGeneral.css">
-    <link rel="stylesheet" href="app\Views\homeStyle.css">
+    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/styleGeneral.css">
+    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/homeStyle.css">
 </head>
 
 <body>
@@ -43,18 +43,18 @@
         </div>
     </div>
     <div class="text-center mt-5 mb-2">
-        <h2>Solo una pasion</h2>
+        <h2>Mas que un deporte, una pasion</h2>
     </div>
     <div class="container text-center">
         <div class="row  align-items-center  imagenes">
             <div class="col-sm-4 p-3">
-                <img src="app\Views\img\balon.jpg" style="width: 90%;" alt="">
+                <img src="http://localhost/Club_Rugby/app/Views/img/balon.jpg" style="width: 90%;" alt="">
             </div>
             <div class="col-sm-4 p-3">
-                <img src="app\Views\img\puntaso.jpg" style="width: 90%;" alt="">
+                <img src="http://localhost/Club_Rugby/app/Views/img/puntaso.jpg" style="width: 90%;" alt="">
             </div>
             <div class="col-sm-4 p-3">
-                <img src="app\Views\img\locos.jpg" style="width: 95%;" alt="">
+                <img src="http://localhost/Club_Rugby/app/Views/img/locos.jpg" style="width: 95%;" alt="">
             </div>
         </div>
     </div>
