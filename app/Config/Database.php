@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'postgres',
-        'password' => 'admin',
+        'password' => 'Popea202',
         'database' => 'ClubRugby_BD',
         'DBDriver' => 'Postgre',
         'DBPrefix' => '',

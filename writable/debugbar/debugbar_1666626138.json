@@ -1,11 +1,11 @@
 {
-    "url": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create",
-    "method": "POST",
+    "url": "http:\/\/localhost\/Club_Rugby\/index.php\/",
+    "method": "GET",
     "isAJAX": false,
-    "startTime": 1666575293.123249,
-    "totalTime": 190.4,
-    "totalMemory": "4.216",
-    "segmentDuration": 30,
+    "startTime": 1666626138.301929,
+    "totalTime": 92.3,
+    "totalMemory": "3.204",
+    "segmentDuration": 15,
     "segmentCount": 7,
     "CI_VERSION": "4.1.9",
     "collectors": [
@@ -24,45 +24,45 @@
                 {
                     "name": "Bootstrap",
                     "component": "Timer",
-                    "start": 1666575293.187495,
-                    "duration": 0.059370994567871094
+                    "start": 1666626138.338169,
+                    "duration": 0.04729580879211426
                 },
                 {
                     "name": "Routing",
                     "component": "Timer",
-                    "start": 1666575293.24687,
-                    "duration": 0.004631996154785156
+                    "start": 1666626138.38547,
+                    "duration": 0.0019659996032714844
                 },
                 {
                     "name": "Before Filters",
                     "component": "Timer",
-                    "start": 1666575293.256432,
-                    "duration": 5.1975250244140625e-5
+                    "start": 1666626138.391488,
+                    "duration": 6.198883056640625e-5
                 },
                 {
                     "name": "Controller",
                     "component": "Timer",
-                    "start": 1666575293.25649,
-                    "duration": 0.05713009834289551
+                    "start": 1666626138.391557,
+                    "duration": 0.0026290416717529297
                 },
                 {
                     "name": "Controller Constructor",
                     "component": "Timer",
-                    "start": 1666575293.256493,
-                    "duration": 0.023097991943359375
+                    "start": 1666626138.39156,
+                    "duration": 0.0016980171203613281
                 },
                 {
                     "name": "After Filters",
                     "component": "Timer",
-                    "start": 1666575293.313664,
-                    "duration": 0.0010459423065185547
+                    "start": 1666626138.39425,
+                    "duration": 0.005294084548950195
                 }
             ]
         },
         {
             "title": "Database",
             "titleSafe": "database",
-            "titleDetails": "(0 total Query, 0  unique across 1 Connection)",
+            "titleDetails": "(0 total Query, 0  unique across 0 Connection)",
             "display": {
                 "queries": []
             },
@@ -72,14 +72,7 @@
             "hasLabel": false,
             "icon": "data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADMSURBVEhLY6A3YExLSwsA4nIycQDIDIhRWEBqamo\/UNF\/SjDQjF6ocZgAKPkRiFeEhoYyQ4WIBiA9QAuWAPEHqBAmgLqgHcolGQD1V4DMgHIxwbCxYD+QBqcKINseKo6eWrBioPrtQBq\/BcgY5ht0cUIYbBg2AJKkRxCNWkDQgtFUNJwtABr+F6igE8olGQD114HMgHIxAVDyAhA\/AlpSA8RYUwoeXAPVex5qHCbIyMgwBCkAuQJIY00huDBUz\/mUlBQDqHGjgBjAwAAACexpph6oHSQAAAAASUVORK5CYII=",
             "hasTimelineData": true,
-            "timelineData": [
-                {
-                    "name": "Connecting to Database: \"default\"",
-                    "component": "Database",
-                    "start": 0,
-                    "duration": "0.000000"
-                }
-            ]
+            "timelineData": []
         },
         {
             "title": "Logs",
@@ -109,17 +102,17 @@
             "hasTimelineData": true,
             "timelineData": [
                 {
-                    "name": "View: socioView\\createSocioView.php",
+                    "name": "View: homeView.php",
                     "component": "Views",
-                    "start": 1666575293.312325,
-                    "duration": 0.0008161067962646484
+                    "start": 1666626138.393324,
+                    "duration": 0.0005249977111816406
                 }
             ]
         },
         {
             "title": "Files",
             "titleSafe": "files",
-            "titleDetails": "( 124 )",
+            "titleDetails": "( 100 )",
             "display": {
                 "coreFiles": [
                     {
@@ -139,20 +132,8 @@
                         "path": "SYSTEMPATH\\Config\\BaseConfig.php"
                     },
                     {
-                        "name": "BaseConnection.php",
-                        "path": "SYSTEMPATH\\Database\\BaseConnection.php"
-                    },
-                    {
                         "name": "BaseHandler.php",
                         "path": "SYSTEMPATH\\Cache\\Handlers\\BaseHandler.php"
-                    },
-                    {
-                        "name": "BaseHandler.php",
-                        "path": "SYSTEMPATH\\Session\\Handlers\\BaseHandler.php"
-                    },
-                    {
-                        "name": "BaseModel.php",
-                        "path": "SYSTEMPATH\\BaseModel.php"
                     },
                     {
                         "name": "BaseService.php",
@@ -187,14 +168,6 @@
                         "path": "SYSTEMPATH\\Database\\Config.php"
                     },
                     {
-                        "name": "Connection.php",
-                        "path": "SYSTEMPATH\\Database\\Postgre\\Connection.php"
-                    },
-                    {
-                        "name": "ConnectionInterface.php",
-                        "path": "SYSTEMPATH\\Database\\ConnectionInterface.php"
-                    },
-                    {
                         "name": "ContentSecurityPolicy.php",
                         "path": "SYSTEMPATH\\HTTP\\ContentSecurityPolicy.php"
                     },
@@ -213,14 +186,6 @@
                     {
                         "name": "CookieStore.php",
                         "path": "SYSTEMPATH\\Cookie\\CookieStore.php"
-                    },
-                    {
-                        "name": "CreditCardRules.php",
-                        "path": "SYSTEMPATH\\Validation\\CreditCardRules.php"
-                    },
-                    {
-                        "name": "Database.php",
-                        "path": "SYSTEMPATH\\Database\\Database.php"
                     },
                     {
                         "name": "Database.php",
@@ -263,16 +228,8 @@
                         "path": "SYSTEMPATH\\Cache\\Handlers\\FileHandler.php"
                     },
                     {
-                        "name": "FileHandler.php",
-                        "path": "SYSTEMPATH\\Session\\Handlers\\FileHandler.php"
-                    },
-                    {
                         "name": "FileLocator.php",
                         "path": "SYSTEMPATH\\Autoloader\\FileLocator.php"
-                    },
-                    {
-                        "name": "FileRules.php",
-                        "path": "SYSTEMPATH\\Validation\\FileRules.php"
                     },
                     {
                         "name": "Files.php",
@@ -287,10 +244,6 @@
                         "path": "SYSTEMPATH\\Filters\\Filters.php"
                     },
                     {
-                        "name": "FormatRules.php",
-                        "path": "SYSTEMPATH\\Validation\\FormatRules.php"
-                    },
-                    {
                         "name": "Header.php",
                         "path": "SYSTEMPATH\\HTTP\\Header.php"
                     },
@@ -303,16 +256,8 @@
                         "path": "SYSTEMPATH\\ThirdParty\\Kint\\Kint.php"
                     },
                     {
-                        "name": "Language.php",
-                        "path": "SYSTEMPATH\\Language\\Language.php"
-                    },
-                    {
                         "name": "Logger.php",
                         "path": "SYSTEMPATH\\Log\\Logger.php"
-                    },
-                    {
-                        "name": "LoggerAwareTrait.php",
-                        "path": "SYSTEMPATH\\ThirdParty\\PSR\\Log\\LoggerAwareTrait.php"
                     },
                     {
                         "name": "LoggerInterface.php",
@@ -333,10 +278,6 @@
                     {
                         "name": "MessageTrait.php",
                         "path": "SYSTEMPATH\\HTTP\\MessageTrait.php"
-                    },
-                    {
-                        "name": "Model.php",
-                        "path": "SYSTEMPATH\\Model.php"
                     },
                     {
                         "name": "Modules.php",
@@ -411,20 +352,8 @@
                         "path": "SYSTEMPATH\\Debug\\Toolbar\\Collectors\\Routes.php"
                     },
                     {
-                        "name": "Rules.php",
-                        "path": "SYSTEMPATH\\Validation\\Rules.php"
-                    },
-                    {
                         "name": "Services.php",
                         "path": "SYSTEMPATH\\Config\\Services.php"
-                    },
-                    {
-                        "name": "Session.php",
-                        "path": "SYSTEMPATH\\Session\\Session.php"
-                    },
-                    {
-                        "name": "SessionInterface.php",
-                        "path": "SYSTEMPATH\\Session\\SessionInterface.php"
                     },
                     {
                         "name": "TextRenderer.php",
@@ -455,14 +384,6 @@
                         "path": "SYSTEMPATH\\ThirdParty\\Kint\\Utils.php"
                     },
                     {
-                        "name": "Validation.php",
-                        "path": "SYSTEMPATH\\Validation\\Validation.php"
-                    },
-                    {
-                        "name": "ValidationInterface.php",
-                        "path": "SYSTEMPATH\\Validation\\ValidationInterface.php"
-                    },
-                    {
                         "name": "View.php",
                         "path": "SYSTEMPATH\\Config\\View.php"
                     },
@@ -475,16 +396,8 @@
                         "path": "SYSTEMPATH\\Debug\\Toolbar\\Collectors\\Views.php"
                     },
                     {
-                        "name": "array_helper.php",
-                        "path": "SYSTEMPATH\\Helpers\\array_helper.php"
-                    },
-                    {
                         "name": "bootstrap.php",
                         "path": "SYSTEMPATH\\bootstrap.php"
-                    },
-                    {
-                        "name": "form_helper.php",
-                        "path": "SYSTEMPATH\\Helpers\\form_helper.php"
                     },
                     {
                         "name": "init.php",
@@ -553,6 +466,10 @@
                         "path": "APPPATH\\Config\\Filters.php"
                     },
                     {
+                        "name": "HomeController.php",
+                        "path": "APPPATH\\Controllers\\HomeController.php"
+                    },
+                    {
                         "name": "Kint.php",
                         "path": "APPPATH\\Config\\Kint.php"
                     },
@@ -577,10 +494,6 @@
                         "path": "APPPATH\\Config\\Services.php"
                     },
                     {
-                        "name": "SocioController.php",
-                        "path": "APPPATH\\Controllers\\SocioController.php"
-                    },
-                    {
                         "name": "Toolbar.php",
                         "path": "APPPATH\\Config\\Toolbar.php"
                     },
@@ -589,40 +502,24 @@
                         "path": "APPPATH\\Config\\UserAgents.php"
                     },
                     {
-                        "name": "Validation.php",
-                        "path": "APPPATH\\Config\\Validation.php"
-                    },
-                    {
                         "name": "View.php",
                         "path": "APPPATH\\Config\\View.php"
-                    },
-                    {
-                        "name": "createSocioView.php",
-                        "path": "APPPATH\\Views\\socioView\\createSocioView.php"
                     },
                     {
                         "name": "development.php",
                         "path": "APPPATH\\Config\\Boot\\development.php"
                     },
                     {
+                        "name": "homeView.php",
+                        "path": "APPPATH\\Views\\homeView.php"
+                    },
+                    {
                         "name": "index.php",
                         "path": "FCPATH\\index.php"
-                    },
-                    {
-                        "name": "infantilModel.php",
-                        "path": "APPPATH\\Models\\infantilModel.php"
-                    },
-                    {
-                        "name": "socioModel.php",
-                        "path": "APPPATH\\Models\\socioModel.php"
-                    },
-                    {
-                        "name": "veteranoModel.php",
-                        "path": "APPPATH\\Models\\veteranoModel.php"
                     }
                 ]
             },
-            "badgeValue": 124,
+            "badgeValue": 100,
             "isEmpty": false,
             "hasTabContent": true,
             "hasLabel": false,
@@ -638,8 +535,8 @@
                 "matchedRoute": [
                     {
                         "directory": "",
-                        "controller": "\\App\\Controllers\\SocioController",
-                        "method": "create",
+                        "controller": "\\App\\Controllers\\HomeController",
+                        "method": "index",
                         "paramCount": 0,
                         "truePCount": 0,
                         "params": []
@@ -673,7 +570,7 @@
                     }
                 ]
             },
-            "badgeValue": 2,
+            "badgeValue": 3,
             "isEmpty": false,
             "hasTabContent": true,
             "hasLabel": false,
@@ -689,7 +586,7 @@
                 "events": {
                     "pre_system": {
                         "event": "pre_system",
-                        "duration": "28.79",
+                        "duration": "24.09",
                         "count": 1
                     }
                 }
@@ -705,34 +602,9 @@
     ],
     "vars": {
         "varData": {
-            "View Data": {
-                "nombre_apellido": "",
-                "dni": "123",
-                "telefono": "",
-                "direccion": "",
-                "mail": "",
-                "id_categoria": "4",
-                "nombre_tutor": "",
-                "dni_tutor": "",
-                "validation": "<div class=\"kint-rich\"><dl><dt class=\"kint-parent\"><span class=\"kint-popup-trigger\" title=\"Open in new window\">&boxbox;<\/span><span class=\"kint-search-trigger\" title=\"Show search box\">&telrec;<\/span><input type=\"text\" class=\"kint-search\" value=\"\"><nav><\/nav><dfn>$value<\/dfn> <var>array<\/var> (8)<\/dt><dd><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_apellido<\/dfn> =&gt; <var>string<\/var> (28) \"El campo nombre es requerido\"<div class=\"access-path\">$value['nombre_apellido']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni<\/dfn> =&gt; <var>string<\/var> (30) \"Longitud de documento invalido\"<div class=\"access-path\">$value['dni']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>telefono<\/dfn> =&gt; <var>string<\/var> (30) \"El campo telefono es requerido\"<div class=\"access-path\">$value['telefono']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>direccion<\/dfn> =&gt; <var>string<\/var> (31) \"El campo direccion es requerido\"<div class=\"access-path\">$value['direccion']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>mail<\/dfn> =&gt; <var>string<\/var> (26) \"El campo mail es requerido\"<div class=\"access-path\">$value['mail']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['nombre_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['dni_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>id_categoria<\/dfn> =&gt; <var>integer<\/var> 2<div class=\"access-path\">$value['id_categoria']<\/div><\/dt><\/dl><\/dd><\/dl><\/div>"
-            }
-        },
-        "session": {
-            "__ci_last_regenerate": "<pre>1666575005<\/pre>",
-            "_ci_previous_url": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create"
-        },
-        "post": {
-            "inputNombre": "",
-            "inputMail": "",
-            "inputTelefono": "",
-            "inputNombreTutor": "",
-            "inputDireccion": "",
-            "inputDocumento": "123",
-            "selectCategoria": "4",
-            "inputDocumentoTutor": ""
+            "View Data": []
         },
         "headers": {
-            "Content-Type": "application\/x-www-form-urlencoded",
             "Host": "localhost",
             "Connection": "keep-alive",
             "Cache-Control": "max-age=0",
@@ -740,7 +612,6 @@
             "Sec-Ch-Ua-Mobile": "?0",
             "Sec-Ch-Ua-Platform": "&quot;Windows&quot;",
             "Upgrade-Insecure-Requests": "1",
-            "Origin": "http:\/\/localhost",
             "User-Agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/106.0.0.0 Safari\/537.36",
             "Accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.9",
             "Sec-Fetch-Site": "same-origin",
@@ -749,15 +620,13 @@
             "Sec-Fetch-Dest": "document",
             "Referer": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create",
             "Accept-Encoding": "gzip, deflate, br",
-            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
-            "Cookie": "debug-bar-theme=dark; debug-bar-position=bottom; debug-bar-tab=ci-vars; debug-bar-state=minimized; ci_session=o50anpuqnbs0lhs89jn7p7bhj9h2mto2"
+            "Accept-Language": "en-US,en;q=0.9,es-US;q=0.8,es;q=0.7",
+            "Cookie": "ci_session=dlk2ejsktbjojql5r72iua3s7b74amck",
+            "Sec-Gpc": "1",
+            "Dnt": "1"
         },
         "cookies": {
-            "debug-bar-theme": "dark",
-            "debug-bar-position": "bottom",
-            "debug-bar-tab": "ci-vars",
-            "debug-bar-state": "minimized",
-            "ci_session": "o50anpuqnbs0lhs89jn7p7bhj9h2mto2"
+            "ci_session": "dlk2ejsktbjojql5r72iua3s7b74amck"
         },
         "request": "HTTP\/1.1",
         "response": {

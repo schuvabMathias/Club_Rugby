@@ -2,10 +2,10 @@
     "url": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create",
     "method": "POST",
     "isAJAX": false,
-    "startTime": 1666575293.123249,
-    "totalTime": 190.4,
-    "totalMemory": "4.216",
-    "segmentDuration": 30,
+    "startTime": 1666625849.10081,
+    "totalTime": 121.89999999999999,
+    "totalMemory": "4.225",
+    "segmentDuration": 20,
     "segmentCount": 7,
     "CI_VERSION": "4.1.9",
     "collectors": [
@@ -24,38 +24,38 @@
                 {
                     "name": "Bootstrap",
                     "component": "Timer",
-                    "start": 1666575293.187495,
-                    "duration": 0.059370994567871094
+                    "start": 1666625849.119282,
+                    "duration": 0.039843082427978516
                 },
                 {
                     "name": "Routing",
                     "component": "Timer",
-                    "start": 1666575293.24687,
-                    "duration": 0.004631996154785156
+                    "start": 1666625849.159133,
+                    "duration": 0.007956981658935547
                 },
                 {
                     "name": "Before Filters",
                     "component": "Timer",
-                    "start": 1666575293.256432,
-                    "duration": 5.1975250244140625e-5
+                    "start": 1666625849.172257,
+                    "duration": 6.794929504394531e-5
                 },
                 {
                     "name": "Controller",
                     "component": "Timer",
-                    "start": 1666575293.25649,
-                    "duration": 0.05713009834289551
+                    "start": 1666625849.172332,
+                    "duration": 0.05033588409423828
                 },
                 {
                     "name": "Controller Constructor",
                     "component": "Timer",
-                    "start": 1666575293.256493,
-                    "duration": 0.023097991943359375
+                    "start": 1666625849.172336,
+                    "duration": 0.015221834182739258
                 },
                 {
                     "name": "After Filters",
                     "component": "Timer",
-                    "start": 1666575293.313664,
-                    "duration": 0.0010459423065185547
+                    "start": 1666625849.222728,
+                    "duration": 0.0011439323425292969
                 }
             ]
         },
@@ -111,8 +111,8 @@
                 {
                     "name": "View: socioView\\createSocioView.php",
                     "component": "Views",
-                    "start": 1666575293.312325,
-                    "duration": 0.0008161067962646484
+                    "start": 1666625849.221213,
+                    "duration": 0.0009989738464355469
                 }
             ]
         },
@@ -689,7 +689,7 @@
                 "events": {
                     "pre_system": {
                         "event": "pre_system",
-                        "duration": "28.79",
+                        "duration": "11.58",
                         "count": 1
                     }
                 }
@@ -707,18 +707,18 @@
         "varData": {
             "View Data": {
                 "nombre_apellido": "",
-                "dni": "123",
+                "dni": "",
                 "telefono": "",
                 "direccion": "",
                 "mail": "",
-                "id_categoria": "4",
+                "id_categoria": "2",
                 "nombre_tutor": "",
                 "dni_tutor": "",
-                "validation": "<div class=\"kint-rich\"><dl><dt class=\"kint-parent\"><span class=\"kint-popup-trigger\" title=\"Open in new window\">&boxbox;<\/span><span class=\"kint-search-trigger\" title=\"Show search box\">&telrec;<\/span><input type=\"text\" class=\"kint-search\" value=\"\"><nav><\/nav><dfn>$value<\/dfn> <var>array<\/var> (8)<\/dt><dd><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_apellido<\/dfn> =&gt; <var>string<\/var> (28) \"El campo nombre es requerido\"<div class=\"access-path\">$value['nombre_apellido']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni<\/dfn> =&gt; <var>string<\/var> (30) \"Longitud de documento invalido\"<div class=\"access-path\">$value['dni']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>telefono<\/dfn> =&gt; <var>string<\/var> (30) \"El campo telefono es requerido\"<div class=\"access-path\">$value['telefono']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>direccion<\/dfn> =&gt; <var>string<\/var> (31) \"El campo direccion es requerido\"<div class=\"access-path\">$value['direccion']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>mail<\/dfn> =&gt; <var>string<\/var> (26) \"El campo mail es requerido\"<div class=\"access-path\">$value['mail']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['nombre_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['dni_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>id_categoria<\/dfn> =&gt; <var>integer<\/var> 2<div class=\"access-path\">$value['id_categoria']<\/div><\/dt><\/dl><\/dd><\/dl><\/div>"
+                "validation": "<div class=\"kint-rich\"><dl><dt class=\"kint-parent\"><span class=\"kint-popup-trigger\" title=\"Open in new window\">&boxbox;<\/span><span class=\"kint-search-trigger\" title=\"Show search box\">&telrec;<\/span><input type=\"text\" class=\"kint-search\" value=\"\"><nav><\/nav><dfn>$value<\/dfn> <var>array<\/var> (8)<\/dt><dd><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_apellido<\/dfn> =&gt; <var>string<\/var> (28) \"El campo nombre es requerido\"<div class=\"access-path\">$value['nombre_apellido']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni<\/dfn> =&gt; <var>string<\/var> (31) \"El campo documento es requerido\"<div class=\"access-path\">$value['dni']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>telefono<\/dfn> =&gt; <var>UTF-8 string<\/var> (31) \"El campo tel&#233;fono es requerido\"<div class=\"access-path\">$value['telefono']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>direccion<\/dfn> =&gt; <var>UTF-8 string<\/var> (33) \"El campo direccio&#243;n es requerido\"<div class=\"access-path\">$value['direccion']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>mail<\/dfn> =&gt; <var>string<\/var> (27) \"El campo Email es requerido\"<div class=\"access-path\">$value['mail']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>nombre_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['nombre_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>dni_tutor<\/dfn> =&gt; <var>string<\/var> (0) \"\"<div class=\"access-path\">$value['dni_tutor']<\/div><\/dt><\/dl><dl><dt><span class=\"kint-access-path-trigger\" title=\"Show access path\">&rlarr;<\/span><dfn>id_categoria<\/dfn> =&gt; <var>integer<\/var> 2<div class=\"access-path\">$value['id_categoria']<\/div><\/dt><\/dl><\/dd><\/dl><\/div>"
             }
         },
         "session": {
-            "__ci_last_regenerate": "<pre>1666575005<\/pre>",
+            "__ci_last_regenerate": "<pre>1666625659<\/pre>",
             "_ci_previous_url": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create"
         },
         "post": {
@@ -727,8 +727,8 @@
             "inputTelefono": "",
             "inputNombreTutor": "",
             "inputDireccion": "",
-            "inputDocumento": "123",
-            "selectCategoria": "4",
+            "inputDocumento": "",
+            "selectCategoria": "2",
             "inputDocumentoTutor": ""
         },
         "headers": {
@@ -749,15 +749,13 @@
             "Sec-Fetch-Dest": "document",
             "Referer": "http:\/\/localhost\/Club_Rugby\/index.php\/socioController\/create",
             "Accept-Encoding": "gzip, deflate, br",
-            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
-            "Cookie": "debug-bar-theme=dark; debug-bar-position=bottom; debug-bar-tab=ci-vars; debug-bar-state=minimized; ci_session=o50anpuqnbs0lhs89jn7p7bhj9h2mto2"
+            "Accept-Language": "en-US,en;q=0.9,es-US;q=0.8,es;q=0.7",
+            "Cookie": "ci_session=4pfi9c0jhfpi28gqnv8garfnq4p0qg7b",
+            "Sec-Gpc": "1",
+            "Dnt": "1"
         },
         "cookies": {
-            "debug-bar-theme": "dark",
-            "debug-bar-position": "bottom",
-            "debug-bar-tab": "ci-vars",
-            "debug-bar-state": "minimized",
-            "ci_session": "o50anpuqnbs0lhs89jn7p7bhj9h2mto2"
+            "ci_session": "4pfi9c0jhfpi28gqnv8garfnq4p0qg7b"
         },
         "request": "HTTP\/1.1",
         "response": {

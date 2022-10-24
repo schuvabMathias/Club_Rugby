@@ -23,20 +23,20 @@ class socioModel extends Model
     protected $updatedField     = 'updated_at';
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
-        'nombre_apellido' => 'required',
+        'nombre_apellido' => 'required|alpha_space',
         'dni' => 'required|min_length[7]|max_length[8]',
-        'telefono' => 'required',
-        'direccion' => 'required',
+        'telefono' => 'required|min_length[10]|max_length[10]',
+        'direccion' => 'required|alpha_space',
         'mail' => 'required|valid_email|is_unique[socios.mail]',
-        'id_categoria' => 'required'
+        'id_categoria' => 'required',
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
-        'nombre_apellido' => ['required' => "El campo nombre es requerido"],
-        'dni' => ['required' => "El campo documento es requerido", 'min_length' => "Longitud de documento invalido", 'max_length' => "Longitud de documento invalido"],
-        'telefono' => ['required' => "El campo telefono es requerido"],
-        'direccion' => ['required' => "El campo direccion es requerido"],
-        'mail' => ['required' => "El campo mail es requerido", 'valid_email' => "Formato de mail invalido", 'is_unique' => "El mail ya existe para un usuario"],
-        'id_categoria' => ['required' => "El campo categoria es requerido"]
+        'nombre_apellido' => ['required' => "El campo nombre es requerido", 'alpha_space' => "Solo se permiten letras"],
+        'dni' => ['required' => "El campo documento es requerido", 'min_length' => "Longitud de documento no válida", 'max_length' => "Longitud de documento no válida"],
+        'telefono' => ['required' => "El campo teléfono es requerido", 'min_length' => "Longitud de telefono no válida", 'max_length' => "Longitud de documento no válida"],
+        'direccion' => ['required' => "El campo direccioón es requerido", 'alpha_space' => "Solo se permiten letras"],
+        'mail' => ['required' => "El campo Email es requerido", 'valid_email' => "Formato de Email no válido", 'is_unique' => "El Email ingresado ya se encuentra registrado"],
+        'id_categoria' => ['required' => "El campo categoría es requerido"]
     ];
     protected $skipValidation = false;  // es para indicar que use la validación
 }
