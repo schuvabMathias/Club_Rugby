@@ -32,10 +32,10 @@ class socioModel extends Model
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
         'nombre_apellido' => ['required' => "El campo nombre es requerido"],
-        'dni' => ['required' => "El campo documento es requerido"],
+        'dni' => ['required' => "El campo documento es requerido", 'min_length' => "Longitud de documento invalido", 'max_length' => "Longitud de documento invalido"],
         'telefono' => ['required' => "El campo telefono es requerido"],
         'direccion' => ['required' => "El campo direccion es requerido"],
-        'mail' => ['required' => "El campo mail es requerido"],
+        'mail' => ['required' => "El campo mail es requerido", 'valid_email' => "Formato de mail invalido", 'is_unique' => "El mail ya existe para un usuario"],
         'id_categoria' => ['required' => "El campo categoria es requerido"]
     ];
     protected $skipValidation = false;  // es para indicar que use la validación
