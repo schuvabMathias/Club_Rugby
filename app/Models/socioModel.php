@@ -23,14 +23,20 @@ class socioModel extends Model
     protected $updatedField     = 'updated_at';
     protected $deletedField     = 'deleted_at';
     protected $validationRules  = [
-        // 'nombre' => 'required',
-        // 'direccion' => 'required',
-        // 'numero_sucursal' => 'required'
+        'nombre_apellido' => 'required',
+        'dni' => 'required',
+        'telefono' => 'required',
+        'direccion' => 'required',
+        'mail' => 'required|valid_email|is_unique[socios.mail]',
+        'id_categoria' => 'required'
     ]; //['email' => 'required|valid_email|is_unique[usuarios.email]'];
     protected $validationMessages = [
-        // 'nombre' => ['required' => 'El campo nombre es requerido'],
-        // 'direccion' => ['required' => 'El campo direccion es requerido'],
-        // 'numero_sucursal' => ['required' => 'El campo numero de sucursal es requerido']
+        'nombre_apellido' => ['required' => "El campo nombre es requerido"],
+        'dni' => ['required' => "El campo nombre es requerido"],
+        'telefono' => ['required' => "El campo nombre es requerido"],
+        'direccion' => ['required' => "El campo nombre es requerido"],
+        'mail' => ['required' => "El campo nombre es requerido"],
+        'id_categoria' => ['required' => "El campo nombre es requerido"]
     ]; /*[
         'email' => ['is_unique' => 'Este e-mail ya pertenece a otro usuario']
     ];*/

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class juvenilModel extends Model
+class infantilModel extends Model
 {
     protected $table            = 'juveniles';
     protected $primaryKey       = 'id_juvenil';
