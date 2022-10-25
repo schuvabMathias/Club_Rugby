@@ -16,7 +16,7 @@
         /* tuve que hacer esto porque el css no me lo tomaba */
         @media (min-width: 720px) and (max-width: 2080px) {
             .general {
-                width: 80%;
+                width: 70%;
             }
         }
     </style>
@@ -27,7 +27,7 @@
 <body>
     <div class="container general">
 
-        <div class="container-fluid p-1 bg-dark text-white text-center mt-5 titulo">
+        <div class="container-fluid p-1 bg-dark text-white text-center mt-3 titulo">
             <h1><b>|~</b> Clubcito de Rugby <b>~|</b></h1>
             <p></p>
         </div>
