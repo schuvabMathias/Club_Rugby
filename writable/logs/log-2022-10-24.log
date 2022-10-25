@@ -98,3 +98,42 @@ Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server:
 #7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
 #8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+ERROR - 2022-10-24 21:07:30 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+CRITICAL - 2022-10-24 21:07:30 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(117): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-24 21:11:18 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+CRITICAL - 2022-10-24 21:11:18 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(117): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-24 21:14:24 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+CRITICAL - 2022-10-24 21:14:24 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(117): CodeIgniter\BaseModel->findAll()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
