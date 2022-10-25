@@ -23,8 +23,8 @@
 
 <body>
 
-    <div class="container general">
-        <div class="container-fluid p-1 bg-dark text-white text-center mt-5 titulo">
+    <div class="container general" style="width: 70%;">
+        <div class="container-fluid p-1 bg-dark text-white text-center mt-3 titulo">
             <h1><b>|~</b> Clubcito de Rugby <b>~|</b></h1>
             <p></p>
         </div>
@@ -50,22 +50,23 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5 mb-2 p-1">
+        <div class="text-center mt-2 mb-5 p-1">
             <h2>Más que un deporte, una pasión.</h2>
-        </div>
-        <div class="container text-center">
-            <div class="row  align-items-center  imagenes">
-                <div class="col-sm-4 p-3">
-                    <img src="http://localhost/Club_Rugby/app/Views/img/balon.jpg" style="width: 88%;" alt="">
-                </div>
-                <div class="col-sm-4 p-3">
-                    <img src="http://localhost/Club_Rugby/app/Views/img/puntaso.jpg" style="width: 90%;" alt="">
-                </div>
-                <div class="col-sm-4 p-3">
-                    <img src="http://localhost/Club_Rugby/app/Views/img/locos.jpg" style="width: 90%;" alt="">
+            <div class="container text-center">
+                <div class="row  align-items-center  imagenes">
+                    <div class="col-sm-4 p-3">
+                        <img src="http://localhost/Club_Rugby/app/Views/img/balon.jpg" style="width: 88%;" alt="">
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <img src="http://localhost/Club_Rugby/app/Views/img/puntaso.jpg" style="width: 90%;" alt="">
+                    </div>
+                    <div class="col-sm-4 p-3">
+                        <img src="http://localhost/Club_Rugby/app/Views/img/locos.jpg" style="width: 90%;" alt="">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
