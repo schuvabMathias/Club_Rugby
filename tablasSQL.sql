@@ -15,6 +15,7 @@ CREATE TABLE socios(
     telefono text NOT NULL,
     direccion text NOT NULL,
     mail text NOT NULL UNIQUE,
+    edad integer NOT NULL,
     id_categoria integer NOT NULL,
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );

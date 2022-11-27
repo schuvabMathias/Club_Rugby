@@ -1,0 +1,535 @@
+ERROR - 2022-11-24 16:05:21 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:05:21 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:06:54 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:06:54 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:09:02 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:09:02 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:10:39 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::findAll()
+#0 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#1 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-11-24 16:14:04 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:14:04 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:18:58 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:18:58 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:19:17 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:19:17 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;infantiles&quot;»
+LINE 3: JOIN &quot;infantiles&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;infantiles&quot;.&quot;...
+                                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:19:39 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:19:39 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:21:51 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:21:51 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:23:37 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veterano&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id_...
+                                                    ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:23:37 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veterano&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id_...
+                                                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:23:52 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veterano&quot;»
+LINE 3: JOIN &quot;veterano&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veterano&quot;.&quot;id_s...
+                                                    ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:23:52 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veterano&quot;»
+LINE 3: JOIN &quot;veterano&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veterano&quot;.&quot;id_s...
+                                                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:24:04 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veterano&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veterano&quot;.&quot;id_...
+                                                     ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:24:04 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veterano&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veterano&quot;.&quot;id_...
+                                                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:25:49 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:25:49 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;veteranos&quot;»
+LINE 3: JOIN &quot;veteranos&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;veteranos&quot;.&quot;id...
+                                                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-11-24 16:26:32 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;v&quot;»
+LINE 3: ...IN &quot;veteranos&quot; as &quot;v&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;v&quot;.&quot;id_so...
+                                                             ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:26:32 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;v&quot;»
+LINE 3: ...IN &quot;veteranos&quot; as &quot;v&quot; ON &quot;socios&quot;.&quot;id_socio&quot; =&quot;=&quot; &quot;v&quot;.&quot;id_so...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#7 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(121): CodeIgniter\BaseModel->findAll()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#11 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-24 16:26:49 --> Undefined variable: socioC
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(127): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 16:27:26 --> Undefined variable: socioC
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(127): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 16:28:33 --> Undefined variable: i
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(127): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 16:31:57 --> Undefined index: dni
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(66): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(126): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 16:35:37 --> Undefined index: dni
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(66): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(126): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 18:06:52 --> Undefined variable: i
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(126): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 18:13:50 --> Array to string conversion
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\mostrarSocioView.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(126): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->mostrar()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 18:46:30 --> Undefined variable: edad
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\socioView\createSocioView.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(47): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 19:08:11 --> requires is not a valid rule.
+#0 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules()
+#2 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run()
+#3 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(707): CodeIgniter\BaseModel->validate()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#5 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#8 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

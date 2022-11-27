@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/styleGeneral.css">
-    <link rel="stylesheet" href="http://localhost/Club_Rugby/app/Views/socioView/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/app/Views/styleGeneral.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/app/Views/socioView/style.css">
 
     <!-- tuve que hacer esto porque el css no me lo tomaba -->
     <style>
@@ -32,7 +32,7 @@
         <div class="container mt-4">
             <h2 class="text-center mt-5 text-dark">Inscripción menú
             </h2>
-            <?= form_open('socioController/create') ?>
+            <?= form_open('socioController/create', ['id', "formCreate"]) ?>
             <div class="row mt-4 formulario">
                 <div class="col-sm-6">
                     <!-- NOMBRE -->
@@ -54,6 +54,24 @@
                         <label for="inputTelefono">Teléfono</label>
                         <?php echo $validation['telefono']; ?>
                     </div> <!-- aca vamos a tener que hacer un control de que se ingresen solo numeros -->
+                    <!-- CATEGORIA -->
+                    <div class="form-floating mb-3">
+                        <select class="form-select" oninput="ctrlEdadCategoria()" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
+                            <option value="1" <?php if ($id_categoria == 1) {
+                                                    echo 'selected';
+                                                } ?>>Infantil (6 a 12 años)</option>
+                            <option value="2" <?php if ($id_categoria == 2) {
+                                                    echo 'selected';
+                                                } ?>>Juvenil (13 a 18 años)</option>
+                            <option value="3" <?php if ($id_categoria == 3) {
+                                                    echo 'selected';
+                                                } ?>>Mayor (19 a 30 años)</option>
+                            <option value="4" <?php if ($id_categoria == 4) {
+                                                    echo 'selected';
+                                                } ?>>Veterano (Mayores a 30 años)</option>
+                        </select>
+                        <label for="floatingSelect">Categoría</label>
+                    </div>
                     <div class="form-floating mb-3 infantil-Nomb">
                         <input type="mail" class="form-control infantil" id="inputNombreTutor" name="inputNombreTutor" value="<?php echo $nombre_tutor ?>" placeholder="Mustafa Bala">
                         <label for="inputNombreTutor" class="form-label infantil">Nombre Tutor</label>
@@ -80,23 +98,12 @@
                         <label for="inputDocumento">Documento</label>
                         <?php echo $validation['dni']; ?>
                     </div>
-                    <!-- CATEGORIA -->
+                    <!-- EDAD -->
                     <div class="form-floating mb-3">
-                        <select class="form-select" name="selectCategoria" id="selectCategoria" aria-label="Floating label select example">
-                            <option value="1" <?php if ($id_categoria == 1) {
-                                                    echo 'selected';
-                                                } ?>>Infantil (6 a 12 años)</option>
-                            <option value="2" <?php if ($id_categoria == 2) {
-                                                    echo 'selected';
-                                                } ?>>Juvenil (13 a 18 años)</option>
-                            <option value="3" <?php if ($id_categoria == 3) {
-                                                    echo 'selected';
-                                                } ?>>Mayor (19 a 30 años)</option>
-                            <option value="4" <?php if ($id_categoria == 4) {
-                                                    echo 'selected';
-                                                } ?>>Veterano (Mayores a 30 años)</option>
-                        </select>
-                        <label for="floatingSelect">Categoría</label>
+                        <input oninput="ctrlEdadCategoria()" type="number" class="form-control" id="inputEdad" name="inputEdad" value="<?php echo $edad ?>" placeholder="Edad">
+                        <label for="inputDireccion">Edad</label>
+                        <span id="edadIncorrecta" color="black" value="Hola"><span>
+                                <?php echo $validation['edad']; ?>
                     </div>
                     <div class="form-floating mb-3 infantil-Doc">
                         <input type="mail" class="form-control infantil" id="inputDocumentoTutor" name="inputDocumentoTutor" value="<?php echo $dni_tutor ?>" placeholder="Algo">
@@ -114,12 +121,12 @@
             <div class="row formulario">
                 <div class="col-sm-6">
                     <div class="d-grid">
-                        <a type="button" class="btn btn-lg btn-outline-warning" href="http://localhost/Club_Rugby/index.php">Volver</a>
+                        <a type="button" class="btn btn-lg btn-outline-warning" href="<?php echo base_url() ?>/index.php">Volver</a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-lg btn-dark">Inscribirme!</button>
+                        <button type="submit" id="btnInscribirse" class="btn btn-lg btn-dark">Inscribirme!</button>
                     </div>
                 </div>
             </div>
@@ -132,12 +139,12 @@
 
 
 
-    <script src="http://localhost/Club_Rugby/app/Views/socioView/createSocioView.js"></script>
+    <script src="<?php echo base_url() ?>/app/Views/socioView/createSocioView.js"></script>
 
 </body>
 <footer>
     <!--Waves Container-->
-    <div class="fixed-bottom">
+    <!-- <div class="fixed-bottom">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -149,7 +156,7 @@
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
         </svg>
-    </div>
+    </div> -->
     <!--Waves end-->
 </footer>
 

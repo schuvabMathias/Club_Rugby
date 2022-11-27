@@ -25,6 +25,7 @@ class SocioController extends BaseController
         $validation = array(
             'nombre_apellido' => "",
             'dni' => "",
+            'edad' => "",
             'telefono' => "",
             'direccion' => "",
             'mail' => "",
@@ -35,6 +36,7 @@ class SocioController extends BaseController
         $data = array(
             'nombre_apellido' => "",
             'dni' => "",
+            'edad' => "",
             'telefono' => "",
             'direccion' => "",
             'mail' => "",
@@ -49,6 +51,7 @@ class SocioController extends BaseController
         $dataSocio = array(
             'nombre_apellido' => $request->getPost('inputNombre'),
             'dni' => $request->getPost('inputDocumento'),
+            'edad' => $request->getPost('inputEdad'),
             'telefono' => $request->getPost('inputTelefono'),
             'direccion' => $request->getPost('inputDireccion'),
             'mail' => $request->getPost('inputMail'),
@@ -112,9 +115,18 @@ class SocioController extends BaseController
     public function mostrar()
     {
         $socioModel = new socioModel($db);
+        // if (strtolower($this->request->getMethod()) !== 'post') {
+        //     return view('socioView\mostrarSocioView', [
+        //         'sociosC' => $socioModel->findAll(),
+        //     ]);
+        // }
         if (strtolower($this->request->getMethod()) !== 'post') {
+            $socios[0] = $socioModel->join("infantiles", "socios.id_socio = infantiles.id_socio")->findAll();
+            $socios[1] = $socioModel->where('id_categoria', 2)->findAll();
+            $socios[2] = $socioModel->where('id_categoria', 3)->findAll();
+            $socios[3] = $socioModel->join('veteranos', 'socios.id_socio = veteranos.id_socio')->findAll();
             return view('socioView\mostrarSocioView', [
-                'socios' => $socioModel->findAll(),
+                'sociosC' => $socios,
             ]);
         }
     }

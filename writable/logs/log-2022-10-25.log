@@ -1,0 +1,22 @@
+CRITICAL - 2022-10-25 16:50:37 --> Undefined variable: APPPATH
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\homeView.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\HomeController.php(9): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\HomeController->index()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-25 16:50:52 --> Undefined variable: APPPATH
+#0 C:\Apache24\htdocs\Club_Rugby\app\Views\homeView.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(210): include('C:\\Apache24\\htd...')
+#2 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#4 C:\Apache24\htdocs\Club_Rugby\app\Controllers\HomeController.php(9): view()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\HomeController->index()
+#6 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
