@@ -1,0 +1,78 @@
+ERROR - 2022-11-27 21:37:16 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+CRITICAL - 2022-11-27 21:37:16 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules()
+#5 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(707): CodeIgniter\BaseModel->validate()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-11-27 21:38:35 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+CRITICAL - 2022-11-27 21:38:35 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �ClubRugby_BD�
+#0 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules()
+#5 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(707): CodeIgniter\BaseModel->validate()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-11-27 21:39:35 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «edad» en la relación «socios»
+LINE 1: INSERT INTO &quot;socios&quot; (&quot;nombre_apellido&quot;, &quot;dni&quot;, &quot;edad&quot;, &quot;tel...
+                                                        ^ in C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-27 21:39:35 --> pg_query(): Query failed: ERROR:  no existe la columna «edad» en la relación «socios»
+LINE 1: INSERT INTO &quot;socios&quot; (&quot;nombre_apellido&quot;, &quot;dni&quot;, &quot;edad&quot;, &quot;tel...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Database\Postgre\Connection.php(135): pg_query()
+#2 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute()
+#3 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 C:\Apache24\htdocs\Club_Rugby\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#5 C:\Apache24\htdocs\Club_Rugby\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\Apache24\htdocs\Club_Rugby\system\BaseModel.php(738): CodeIgniter\Model->doInsert()
+#7 C:\Apache24\htdocs\Club_Rugby\system\Model.php(625): CodeIgniter\BaseModel->insert()
+#8 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(73): CodeIgniter\Model->insert()
+#9 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#10 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-27 22:13:19 --> Invalid file: operacionExitosa.php
+#0 C:\Apache24\htdocs\Club_Rugby\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Apache24\htdocs\Club_Rugby\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Apache24\htdocs\Club_Rugby\app\Controllers\SocioController.php(112): view()
+#3 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(832): App\Controllers\SocioController->create()
+#4 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Apache24\htdocs\Club_Rugby\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Apache24\htdocs\Club_Rugby\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

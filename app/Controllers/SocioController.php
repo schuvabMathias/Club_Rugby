@@ -109,7 +109,7 @@ class SocioController extends BaseController
                 return view('socioView\createSocioView', $dataSocio);
             }
         }
-        return view('homeView');
+        return view('operacionExitosa');
     }
 
     public function mostrar()

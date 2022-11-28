@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/rugbyIcon.ico">
+
     <link rel="stylesheet" href="<?php echo base_url() ?>/app/Views/styleGeneral.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>/app/Views/homeStyle.css">
 
@@ -21,7 +23,7 @@
     </style>
 </head>
 
-<body>
+<body style="margin-bottom: 100px;">
 
     <div class="container general" style="width: 70%;">
         <div class="container-fluid p-1 bg-dark text-white text-center mt-3 titulo">
@@ -68,15 +70,10 @@
         </div>
 
     </div>
-
-
-
-
-
 </body>
 <footer>
     <!--Waves Container-->
-    <!-- <div class="fixed-bottom">
+    <div class="fixed-bottom">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -88,7 +85,7 @@
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
         </svg>
-    </div> -->
+    </div>
     <!--Waves end-->
 </footer>
 
