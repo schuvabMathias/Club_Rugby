@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/rugbyIcon.ico">
 
     <link rel="stylesheet" href="<?php echo base_url() ?>/app/Views/styleGeneral.css">
     <style>
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-    <div class="container general">
+    <div class="container general mb-4">
 
         <div class="container-fluid p-1 bg-dark text-white text-center mt-3 titulo">
             <h1><b>|~</b> Clubcito de Rugby <b>~|</b></h1>
